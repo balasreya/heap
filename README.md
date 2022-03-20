@@ -29,11 +29,11 @@ void heapify(int arr[],int n,int i )
 void heap_sort(int arr[],int n)
 {
     int i;
-    if(i=(n/2)-1;i>=0;i--)
+    for(i=(n/2)-1;i>=0;i--)
     {
         heapify(arr,n,i);
     }
-    if(i=n-1;i>=0;i--)
+    for(i=n-1;i>=0;i--)
     {
         swap(&arr[0],&arr[i]);
         heapify(arr,i,0);
